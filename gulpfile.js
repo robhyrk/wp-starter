@@ -17,11 +17,7 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.init())
     .pipe(prettyError())
     .pipe(sass())
-    .pipe(
-      autoprefixer({
-        browsers: ['last 2 versions']
-      })
-    )
+    .pipe(autoprefixer())
     .pipe(gulp.dest('./'))
     .pipe(cssnano())
     .pipe(rename('style.min.css'))
@@ -65,7 +61,7 @@ gulp.task('browser-sync', function() {
   ];
 
   browserSync.init(files, {
-    proxy: 'localhost:8888/inhabitant'
+    proxy: 'localhost:8888/starter'
   });
 
   gulp.watch(files).on('change', browserSync.stream);

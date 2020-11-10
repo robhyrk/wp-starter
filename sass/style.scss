@@ -1,16 +1,16 @@
 /*
-Theme Name: Inhabitant
+Theme Name: Starter Theme
 Author: Rob H
-Description: A wicked theme I made.
+Description: Boilerplate theme.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: inhabitant
 */
 
-@import 'abstracts/variables';
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
+//User Styles
+@import 'themes/theme';
+@import 'themes/admin';
 
 @import 'base/reset';
 @import 'base/typography';
@@ -30,6 +30,3 @@ Text Domain: inhabitant
 @import 'pages/about';
 @import 'pages/contact';
 @import 'pages/shop';
-
-@import 'themes/theme';
-@import 'themes/admin';
